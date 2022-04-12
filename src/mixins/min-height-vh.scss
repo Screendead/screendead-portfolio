@@ -1,0 +1,5 @@
+@mixin min-height-vh($value) {
+  min-height: $value + vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * $value);
+  padding: 20px 0;
+}
